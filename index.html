@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Festivals</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!--BOOTSTRAP CSS-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+	<!--links the css file to the website-->
+	<link rel="stylesheet" href="ProjectStyle/allstyle.css" />
+	<!--links that allow for the use of google fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS (taken from a previous class) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!--makes a header-->
+	<div class="header">
+		<!--puts an image in the header-->
+	<img class="logo" src="images/webicon.webp" alt="music icon" title="image title"/>
+	<h1>MUSIC OF EDEN</h1>
+	<h6>prepare for a good time</h6>
+	</div>
+		<!--creates a siebar-->
+        <div class="sidebar">
+					<!--creates 3 tabs with lins to the other websites-->
+          <a href="index.html">Home</a>
+          <a href="index2.html">Information</a>
+					<a href="index3.html">Tickets</a>
+        </div>
+        <div class="main">
+
+					<h2 class="h1i">Get ready for an amazing weekend<br></h2>
+					<br>
+					<h4 class="h1i">Marley park, Dublin</h4>
+					<br>
+					<h4 class="h1i">June 10th - 12th</h4>
+					<br>
+					<h4 class="h1i">Tickets go on sale 1 month befor so get ready</h4>
+					<br>
+
+					<h3 class="h1i" >WHATS TO EXPECTED</h3>
+					<div class="slide">
+						<img class="myslides" src="images/im1.webp" style="width:100%">
+						<img class="myslides" src="images/im2.webp" style="width:100%">
+						<img class="myslides" src="images/im3.webp" style="width:100%">
+						<img class="myslides" src="images/im4.webp" style="width:100%">
+						<img class="myslides" src="images/im5.webp" style="width:100%">
+						<img class="myslides" src="images/im6.webp" style="width:100%">
+					</div>
+					<script>
+					//taken directly from W3schools css slideshow example
+					//didnt have a lot of time to work on it, dontt really understand but it works
+					var myIndex = 0;
+					carousel();
+
+					function carousel() {
+					  var i;
+					  var x = document.getElementsByClassName("myslides");
+					  for (i = 0; i < x.length; i++) {
+					    x[i].style.display = "none";
+					  }
+					  myIndex++;
+					  if (myIndex > x.length) {myIndex = 1}
+					  x[myIndex-1].style.display = "block";
+					  setTimeout(carousel, 2000); // Change image every 2 seconds
+					}
+					</script>
+        </div>
+
+
+</body>
+
+
+</html>
